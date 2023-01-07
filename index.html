@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chore Door!</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <header class="container-fluid d-flex justify-content-center p-2">
+      <div class="header sticky-top rounded-pill w-50 shadow text-center p-1">
+        <img class="img-fluid" src="https://content.codecademy.com/projects/chore-door/images/logo.svg">
+      </div>
+    </header>
+
+    <section id="gameRules" class="pt-4" >
+      <div id="instructionsRow" class="container-fluid rounded-5 d-flex justify-content-center ">
+        <div class="row text-center">
+          <div class="col">
+          <span class="d-inline-flex">
+            <img class="pb-2 img-fluid" src="https://content.codecademy.com/projects/chore-door/images/star.svg">
+            <h1> Instructions </h1>
+            <img class="pb-2 img-fluid" src="https://content.codecademy.com/projects/chore-door/images/star.svg">
+          </span>
+        </div>
+        <ol class="ps-4">
+          <li>Hiding behind one of these doors is the ChoreBot.</li>
+          <li>Your mission is to open all of the doors without running into the ChoreBot.</li>          
+          <li>If you manage to avoid the ChoreBot until you open the very last door, you win!</li>
+          <li>See if you can score a winning streak!</li>
+        </ol>          
+      </div>
+    </section>
+    <section id="gameDiv" class="bg-dark rounded-5 p-3">
+      <div class="container-fluid align-items-center text-center justify-content-between">
+        <div class="row d-inline-flex">
+          <div class="col-4 ">
+            <img id="door1" class="img-fluid rounded" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+          </div>
+          <div class="col-4">
+            <img id="door2" class="img-fluid rounded" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+          </div>
+          <div class="col-4">
+            <img id="door3" class="img-fluid rounded" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+
+          </div>
+        </div>
+        <div class="row p-4">
+          <div class="col">
+            <button id="start" class="start-btn btn rounded-pill w-50">Good luck!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+
+</html>
